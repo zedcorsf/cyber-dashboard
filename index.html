@@ -253,7 +253,7 @@
     .accent-strip { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   }
 
-/* --- Responsive enhancements (added) --- */
+/* --- Responsive enhancements --- */
 img { max-width: 100%; height: auto; }
 
 body { overflow-x: hidden; }
@@ -396,7 +396,7 @@ body { overflow-x: hidden; }
       </div>
       <div class="tsc-card">
         <div class="tsc-icon" style="background:#EDE9FE;color:#7C3AED">&#x1f512;</div>
-        <div class="tsc-name">Public</div>
+        <div class="tsc-name">Confidentiality</div>
         <div class="tsc-criteria">C1 Series</div>
         <div class="tsc-bottom" style="background:#7C3AED"></div>
       </div>
@@ -549,24 +549,24 @@ const policies = [
   { id:"P09", name:"Change Management Policy", primary:15, supporting:3 },
   { id:"P22", name:"Network Security Policy", primary:14, supporting:7 },
   { id:"P12", name:"Vulnerability Management Policy", primary:13, supporting:7 },
-  { id:"P18", name:"Vendor Management Policy", primary:12, supporting:1 },
-  { id:"P11", name:"Logging & Monitoring Policy", primary:12, supporting:4 },
-  { id:"P08", name:"Physical Security Policy", primary:11, supporting:3 },
   { id:"P07", name:"Password Policy", primary:10, supporting:9 },
+  { id:"P11", name:"Logging & Monitoring Policy", primary:12, supporting:4 },
+  { id:"P02", name:"Risk Assessment Policy", primary:5, supporting:10 },
+  { id:"P14", name:"Backup & Recovery Policy", primary:1, supporting:13 },
+  { id:"P08", name:"Physical Security Policy", primary:11, supporting:3 },
+  { id:"P18", name:"Vendor Management Policy", primary:12, supporting:1 },
   { id:"P13", name:"Encryption Policy", primary:10, supporting:2 },
+  { id:"P20", name:"Data Protection Policy", primary:6, supporting:6 },
+  { id:"P05", name:"Acceptable Use Policy", primary:4, supporting:7 },
   { id:"P10", name:"Incident Response Plan", primary:8, supporting:2 },
   { id:"P19", name:"Code of Conduct", primary:8, supporting:3 },
   { id:"P17", name:"Security Awareness Training", primary:7, supporting:4 },
-  { id:"P20", name:"Data Protection Policy", primary:6, supporting:6 },
-  { id:"P02", name:"Risk Assessment Policy", primary:5, supporting:10 },
   { id:"P04", name:"Asset Management Policy", primary:5, supporting:5 },
-  { id:"P05", name:"Acceptable Use Policy", primary:4, supporting:7 },
   { id:"P23", name:"Remote Work & Mobile Device", primary:4, supporting:7 },
   { id:"P15", name:"Business Continuity Plan", primary:3, supporting:2 },
-  { id:"P21", name:"Data Retention & Disposal", primary:3, supporting:0 },
-  { id:"P16", name:"Disaster Recovery Plan", primary:2, supporting:2 },
   { id:"P03", name:"Data Classification Policy", primary:1, supporting:4 },
-  { id:"P14", name:"Backup & Recovery Policy", primary:0, supporting:0 },
+  { id:"P16", name:"Disaster Recovery Plan", primary:2, supporting:2 },
+  { id:"P21", name:"Data Retention & Disposal", primary:3, supporting:0 },
 ];
 
 const maxTotal = Math.max(...policies.map(p => p.primary + p.supporting));
